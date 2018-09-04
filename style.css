@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.header {
+  background-size: cover; }
+  .header .nav {
+    display: flex;
+    justify-content: space-between; }
+    .header .nav .logo {
+      padding: 20px 40px;
+      width: 160px; }
+      .header .nav .logo img {
+        width: 100%; }
+    .header .nav .menu {
+      list-style-type: none;
+      padding: 20px 40px; }
+      .header .nav .menu .menu-item {
+        display: inline-block;
+        padding: 20px 20px 0; }
+        .header .nav .menu .menu-item a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold; }
+  .header .phone-frame {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px; }
+    @media (max-width: 1024px) {
+      .header .phone-frame {
+        padding: 10px 50px; } }
+    @media (max-width: 640px) {
+      .header .phone-frame {
+        padding: 2px 10px; } }
+    .header .phone-frame .phone-business-left {
+      width: 45%; }
+      .header .phone-frame .phone-business-left img {
+        width: 80%; }
+    @media (max-width: 640px) {
+      .header .phone-frame {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px; }
+        .header .phone-frame .phone-business-left {
+          width: 100%; }
+          .header .phone-frame .phone-business-left img {
+            width: 80%; } }
+    .header .phone-frame .phone-business-right {
+      width: 45%;
+      flex-direction: column;
+      margin-top: 200px; }
+      @media (max-width: 1024px) {
+        .header .phone-frame .phone-business-right {
+          margin-top: 10px;
+          width: 100%; } }
+      .header .phone-frame .phone-business-right .install {
+        font-size: 3em;
+        padding-bottom: 20px; }
+      .header .phone-frame .phone-business-right .install-description {
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        color: #8c8c8c; }
+      .header .phone-frame .phone-business-right form {
+        display: flex;
+        flex-direction: column; }
+        .header .phone-frame .phone-business-right form input[type=text] {
+          width: 240px;
+          padding: 12px 0;
+          color: #cccccc;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid #8c8c8c;
+          text-align: left; }
+        .header .phone-frame .phone-business-right form input[type=button] {
+          width: 160px;
+          border-radius: 50px;
+          background-color: #3dd8c8;
+          color: #ffffff;
+          padding: 14px;
+          text-align: center;
+          border: none; }
+
+/*# sourceMappingURL=style.css.map */
