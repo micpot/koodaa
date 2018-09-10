@@ -84,4 +84,36 @@ body {
           text-align: center;
           border: none; }
 
+.bike {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px; }
+  @media (max-width: 1024px) {
+    .bike {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .bike {
+      padding: 2px 10px; } }
+  .bike .bike-left {
+    width: 45%; }
+    .bike .bike-left img {
+      width: 80%; }
+  @media (max-width: 640px) {
+    .bike {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px; }
+      .bike .bike-right {
+        width: 100%; }
+        .bike .bike-right img {
+          width: 80%; } }
+  .bike .bike-right {
+    width: 45%;
+    flex-direction: column;
+    margin-top: 200px; }
+    @media (max-width: 1024px) {
+      .bike .bike-right {
+        margin-top: 10px;
+        width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
