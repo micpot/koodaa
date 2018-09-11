@@ -124,6 +124,7 @@ body {
         }
     }
 }
+
 .bike {
     display: flex;
     justify-content: space-between;
@@ -139,7 +140,7 @@ body {
         width: 45%;
 
         img {
-            width: 80%;
+            width: 100%;
         }
     }
     @include breakpoint($breakpoint-medium) {}
@@ -147,23 +148,33 @@ body {
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+        background-color: #eeeff0;
 
-        .bike-right {
+        .bike-left {
             width: 100%;
 
             img {
-                width: 80%;
+                width: 100%;
             }
         }
     }
 
     .bike-right {
         width: 45%;
-        flex-direction: column;
-        margin-top: 200px;
+        margin-top: 100px;
         @include breakpoint($breakpoint-medium) {
             margin-top: 10px;
             width: 100%;
+        }
+
+        .small-business-top {
+            font-size: 2em;
+            padding-bottom: 20px;
+        }
+
+        .small-business-description {
+            padding-bottom: 20px;
+            color: #8c8c8c;
         }
     }
 }

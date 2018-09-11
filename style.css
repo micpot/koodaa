@@ -97,23 +97,29 @@ body {
   .bike .bike-left {
     width: 45%; }
     .bike .bike-left img {
-      width: 80%; }
+      width: 100%; }
   @media (max-width: 640px) {
     .bike {
       display: flex;
       flex-direction: column;
-      padding: 10px 20px; }
-      .bike .bike-right {
+      padding: 10px 20px;
+      background-color: #eeeff0; }
+      .bike .bike-left {
         width: 100%; }
-        .bike .bike-right img {
-          width: 80%; } }
+        .bike .bike-left img {
+          width: 100%; } }
   .bike .bike-right {
     width: 45%;
-    flex-direction: column;
-    margin-top: 200px; }
+    margin-top: 100px; }
     @media (max-width: 1024px) {
       .bike .bike-right {
         margin-top: 10px;
         width: 100%; } }
+    .bike .bike-right .small-business-top {
+      font-size: 2em;
+      padding-bottom: 20px; }
+    .bike .bike-right .small-business-description {
+      padding-bottom: 20px;
+      color: #8c8c8c; }
 
 /*# sourceMappingURL=style.css.map */
