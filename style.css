@@ -34,7 +34,8 @@ body {
         padding: 10px 50px; } }
     @media (max-width: 640px) {
       .header .phone-frame {
-        padding: 2px 10px; } }
+        padding: 0px;
+        text-align: center; } }
     .header .phone-frame .phone-business-left {
       width: 45%; }
       .header .phone-frame .phone-business-left img {
@@ -43,11 +44,12 @@ body {
       .header .phone-frame {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 10px 20px; }
         .header .phone-frame .phone-business-left {
           width: 100%; }
           .header .phone-frame .phone-business-left img {
-            width: 80%; } }
+            width: 100%; } }
     .header .phone-frame .phone-business-right {
       width: 45%;
       flex-direction: column;
@@ -59,6 +61,10 @@ body {
       .header .phone-frame .phone-business-right .install {
         font-size: 3em;
         padding-bottom: 20px; }
+        @media (max-width: 640px) {
+          .header .phone-frame .phone-business-right .install {
+            display: flex;
+            justify-content: center; } }
       .header .phone-frame .phone-business-right .install-description {
         font-size: 1.5em;
         padding-bottom: 20px;
@@ -66,6 +72,9 @@ body {
       .header .phone-frame .phone-business-right form {
         display: flex;
         flex-direction: column; }
+        @media (max-width: 640px) {
+          .header .phone-frame .phone-business-right form {
+            display: inline; } }
         .header .phone-frame .phone-business-right form input[type=text] {
           width: 240px;
           padding: 12px 0;
@@ -102,8 +111,9 @@ body {
     .bike {
       display: flex;
       flex-direction: column;
-      padding: 10px 20px;
-      background-color: #eeeff0; }
+      padding: 0px;
+      background-color: #eeeff0;
+      text-align: center; }
       .bike .bike-left {
         width: 100%; }
         .bike .bike-left img {
@@ -117,9 +127,9 @@ body {
         width: 100%; } }
     .bike .bike-right .small-business-top {
       font-size: 2em;
-      padding-bottom: 20px; }
+      padding: 10px 10px; }
     .bike .bike-right .small-business-description {
-      padding-bottom: 20px;
+      padding: 2px 10px;
       color: #8c8c8c; }
 
 /*# sourceMappingURL=style.css.map */
