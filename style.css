@@ -25,6 +25,18 @@ body {
           text-decoration: none;
           color: #000;
           font-weight: bold; }
+  .header .mobile-menu {
+    display: none; }
+    @media (max-width: 640px) {
+      .header .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
+    .header .mobile-menu .top-menu {
+      font-size: 2em;
+      font-weight: bold;
+      padding-bottom: 20px;
+      justify-content: center; }
   .header .phone-frame {
     display: flex;
     justify-content: space-between;

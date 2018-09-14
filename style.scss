@@ -43,6 +43,24 @@ body {
         }
     }
 
+    .mobile-menu {
+        display: none;
+        @include breakpoint($breakpoint-small) {
+            display:flex;
+            flex-direction: column;
+justify-content: center;
+
+        }
+        .top-menu {
+                font-size: 2em;
+                font-weight: bold;
+                padding-bottom: 20px;
+                justify-content: center;
+
+            }
+
+    }
+
     .phone-frame {
         display: flex;
         justify-content: space-between;
