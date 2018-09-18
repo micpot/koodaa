@@ -10,33 +10,66 @@ body {
   .header .nav {
     display: flex;
     justify-content: space-between; }
+    .header .nav .mobile-menu-title {
+      display: none; }
     .header .nav .logo {
       padding: 20px 40px;
       width: 160px; }
+      @media (max-width: 640px) {
+        .header .nav .logo {
+          width: 90%; } }
       .header .nav .logo img {
         width: 100%; }
     .header .nav .menu {
       list-style-type: none;
       padding: 20px 40px; }
+      @media (max-width: 640px) {
+        .header .nav .menu {
+          position: absolute;
+          width: 50%;
+          background: red;
+          left: -50%;
+          transition: all 0.3s ease; }
+          .header .nav .menu.open {
+            left: 0; } }
       .header .nav .menu .menu-item {
         display: inline-block;
         padding: 20px 20px 0; }
+        @media (max-width: 640px) {
+          .header .nav .menu .menu-item {
+            display: block; } }
         .header .nav .menu .menu-item a {
           text-decoration: none;
           color: #000;
           font-weight: bold; }
-  .header .mobile-menu {
-    display: none; }
-    @media (max-width: 640px) {
-      .header .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; } }
-    .header .mobile-menu .top-menu {
-      font-size: 2em;
-      font-weight: bold;
-      padding-bottom: 20px;
+          @media (max-width: 640px) {
+            .header .nav .menu .menu-item a {
+              padding: 10px 0;
+              display: inline-block; } }
+  @media (max-width: 640px) {
+    .header .nav-mobile {
+      display: flex;
+      flex-direction: column;
       justify-content: center; }
+      .header .nav-mobile .logo {
+        padding: 20px 40px; }
+        .header .nav-mobile .logo img {
+          width: 100%; }
+      .header .nav-mobile .mobile-menu-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+        .header .nav-mobile .mobile-menu-title a {
+          text-transform: uppercase;
+          font-size: 2em;
+          font-weight: bold; } }
+      @media (max-width: 640px) and (max-width: 640px) {
+        .header .nav-mobile .mobile-menu-title a {
+          padding: 10px 0;
+          display: inline-block; } }
+  @media (max-width: 640px) {
+          .header .nav-mobile .mobile-menu-title a.active, .header .nav-mobile .mobile-menu-title a:hover {
+            background-color: #F6F6F6; } }
   .header .phone-frame {
     display: flex;
     justify-content: space-between;
