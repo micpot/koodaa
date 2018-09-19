@@ -25,19 +25,19 @@ body {
       padding: 20px 40px; }
       @media (max-width: 640px) {
         .header .nav .menu {
+          padding: 40px 20px;
+          font-size: 2em;
           position: absolute;
-          width: 50%;
-          background: red;
-          left: -50%;
+          text-align: center;
+          width: 100%;
+          background: #3dd8c8;
+          top: -100%;
           transition: all 0.3s ease; }
           .header .nav .menu.open {
-            left: 0; } }
+            top: 0; } }
       .header .nav .menu .menu-item {
         display: inline-block;
         padding: 20px 20px 0; }
-        @media (max-width: 640px) {
-          .header .nav .menu .menu-item {
-            display: block; } }
         .header .nav .menu .menu-item a {
           text-decoration: none;
           color: #000;
@@ -45,7 +45,7 @@ body {
           @media (max-width: 640px) {
             .header .nav .menu .menu-item a {
               padding: 10px 0;
-              display: inline-block; } }
+              display: block; } }
   @media (max-width: 640px) {
     .header .nav-mobile {
       display: flex;
@@ -69,7 +69,7 @@ body {
           display: inline-block; } }
   @media (max-width: 640px) {
           .header .nav-mobile .mobile-menu-title a.active, .header .nav-mobile .mobile-menu-title a:hover {
-            background-color: #F6F6F6; } }
+            background-color: #3dd8c8; } }
   .header .phone-frame {
     display: flex;
     justify-content: space-between;
@@ -79,7 +79,7 @@ body {
         padding: 10px 50px; } }
     @media (max-width: 640px) {
       .header .phone-frame {
-        padding: 0px;
+        padding: 0;
         text-align: center; } }
     .header .phone-frame .phone-business-left {
       width: 45%; }
@@ -156,7 +156,7 @@ body {
     .bike {
       display: flex;
       flex-direction: column;
-      padding: 0px;
+      padding: 0;
       background-color: #eeeff0;
       text-align: center; }
       .bike .bike-left {
@@ -172,7 +172,7 @@ body {
         width: 100%; } }
     .bike .bike-right .small-business-top {
       font-size: 2em;
-      padding: 10px 10px; }
+      padding: 10px; }
     .bike .bike-right .small-business-description {
       padding: 2px 10px;
       color: #8c8c8c; }
