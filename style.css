@@ -141,7 +141,7 @@ body {
 .bike {
   display: flex;
   justify-content: space-between;
-  padding: 40px 200px; }
+  padding: 40px  200px 0px 200px; }
   @media (max-width: 1024px) {
     .bike {
       padding: 10px 50px; } }
@@ -176,5 +176,42 @@ body {
     .bike .bike-right .small-business-description {
       padding: 2px 10px;
       color: #8c8c8c; }
+
+.printer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 200px 40px 200px;
+  background-color: #eeeff0; }
+  @media (max-width: 1024px) {
+    .printer {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .printer {
+      padding: 2px 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+      background-color: #ffffff;
+      text-align: center; } }
+  .printer .printer-left {
+    width: 45%;
+    margin-top: 100px; }
+    @media (max-width: 640px) {
+      .printer .printer-left {
+        width: 100%;
+        margin-top: 0px; } }
+    .printer .printer-left .bills-title {
+      font-size: 2em;
+      padding: 10px; }
+    .printer .printer-left .bills-description {
+      padding: 2px 10px;
+      color: #8c8c8c; }
+  .printer .printer-right {
+    width: 45%; }
+    @media (max-width: 640px) {
+      .printer .printer-right {
+        width: 100%; } }
+    .printer .printer-right img {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
