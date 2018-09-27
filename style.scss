@@ -241,13 +241,11 @@ body {
         }
 
         .small-business-top {
-            font-size: 2em;
-            padding: 10px;
+            @include title;
         }
 
         .small-business-description {
-            padding: 2px 10px;
-            color: #8c8c8c;
+            @include description;
         }
     }
 }
@@ -278,13 +276,11 @@ body {
         }
 
         .bills-title {
-            font-size: 2em;
-            padding: 10px;
+            @include title;
         }
 
         .bills-description {
-            padding: 2px 10px;
-            color: #8c8c8c;
+            @include description;
         }
     }
 
@@ -293,60 +289,57 @@ body {
         @include breakpoint($breakpoint-small) {
             width: 100%;
         }
-
         img {
             width: 100%;
         }
     }
 }
 
-.coins {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 200px 40px;
-    @include breakpoint($breakpoint-medium) {
-        padding: 10px 50px;
-    }
-    @include breakpoint($breakpoint-small) {
-        padding: 2px 10px;
+    .coins {
         display: flex;
-        flex-direction: column;
-        padding: 0;
-        background-color: #ffffff;
-        text-align: center;
-    }
+        justify-content: space-between;
+        padding: 0 200px 40px;
 
-    .coins-left {
-        width: 45%;
         @include breakpoint($breakpoint-medium) {
-            padding-top: 50px;
+            padding: 10px 50px;
         }
         @include breakpoint($breakpoint-small) {
-            width: 100%;
-            padding-top: 0;
-        }
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .coins-right {
-        width: 45%;
-        margin-top: 100px;
-        @include breakpoint($breakpoint-small) {
-            width: 100%;
-            margin-top: 0;
-        }
-
-        .coins-title {
-            font-size: 2em;
-            padding: 10px;
-        }
-
-        .coins-description {
             padding: 2px 10px;
-            color: #8c8c8c;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .coins-left {
+            width: 45%;
+            @include breakpoint($breakpoint-medium) {
+                padding-top:50px;
+            }
+            @include breakpoint($breakpoint-small) {
+                width: 100%;
+                padding-top:0px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .coins-right {
+
+            width: 45%;
+            margin-top: 100px;
+            @include breakpoint($breakpoint-small) {
+                width: 100%;
+                margin-top: 0;
+            }
+            .coins-title {
+                @include title;
+
+            }
+            .coins-description {
+                @include description;
+
+            }
         }
     }
-}
