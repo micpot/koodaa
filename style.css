@@ -237,7 +237,7 @@ body {
     @media (max-width: 640px) {
       .coins .coins-left {
         width: 100%;
-        padding-top: 0px; } }
+        padding-top: 0; } }
     .coins .coins-left img {
       width: 100%; }
   .coins .coins-right {
@@ -251,6 +251,87 @@ body {
       font-size: 2em;
       padding: 10px; }
     .coins .coins-right .coins-description {
+      padding: 2px 10px;
+      color: #8c8c8c; }
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px 40px;
+  background-color: #def2f4; }
+  @media (max-width: 1024px) {
+    .payment {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .payment {
+      padding: 2px 10px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+      background-color: #ffffff;
+      text-align: center; } }
+  .payment .payment-left {
+    width: 45%;
+    margin-top: 100px; }
+    @media (max-width: 640px) {
+      .payment .payment-left {
+        width: 100%;
+        margin-top: 0;
+        background-color: #def2f4;
+        padding-bottom: 20px; } }
+    .payment .payment-left .payment-title {
+      font-size: 2em;
+      padding: 10px; }
+    .payment .payment-left .payment-description {
+      padding: 2px 10px;
+      color: #8c8c8c; }
+  .payment .payment-right {
+    width: 45%; }
+    @media (max-width: 640px) {
+      .payment .payment-right {
+        width: 100%;
+        background-color: #def2f4; } }
+    .payment .payment-right img {
+      width: 100%; }
+
+.wand {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px 40px; }
+  @media (max-width: 1024px) {
+    .wand {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .wand {
+      padding: 2px 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      background-color: #ffffff;
+      text-align: center; } }
+  .wand .wand-left {
+    width: 45%; }
+    @media (max-width: 1024px) {
+      .wand .wand-left {
+        padding-top: 50px; } }
+    @media (max-width: 640px) {
+      .wand .wand-left {
+        width: 100%;
+        padding-top: 0; } }
+    .wand .wand-left img {
+      width: 100%; }
+  .wand .wand-right {
+    width: 45%;
+    margin-top: 100px; }
+    @media (max-width: 640px) {
+      .wand .wand-right {
+        width: 100%;
+        margin-top: 0; } }
+    .wand .wand-right .wand-title {
+      font-size: 2em;
+      padding: 10px; }
+    .wand .wand-right .wand-description {
       padding: 2px 10px;
       color: #8c8c8c; }
 
