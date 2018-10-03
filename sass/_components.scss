@@ -3,3 +3,13 @@
     @content
   }
 }
+
+@mixin title {
+    font-size: 2em;
+    padding: 10px;
+}
+
+@mixin description {
+    padding: 2px 10px;
+    color: #8c8c8c;
+}
