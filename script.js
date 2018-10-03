@@ -14,3 +14,9 @@ function use() {
         menuNode.classList.add('open')
     }
 }
+
+$(document).ready(function(){
+    $('.slick-example').slick({
+        // settings goes here
+    });
+});
