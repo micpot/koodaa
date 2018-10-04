@@ -1,0 +1,51 @@
+.bike {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px 0;
+    @include breakpoint($breakpoint-medium) {
+        padding: 10px 50px;
+    }
+    @include breakpoint($breakpoint-small) {
+        padding: 2px 10px;
+    }
+
+    .bike-left {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+    @include breakpoint($breakpoint-small) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: #eeeff0;
+        text-align: center;
+
+        .bike-left {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .bike-right {
+        width: 45%;
+        margin-top: 100px;
+        @include breakpoint($breakpoint-medium) {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .small-business-top {
+            @include title;
+        }
+
+        .small-business-description {
+            @include description;
+        }
+    }
+}

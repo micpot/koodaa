@@ -25,6 +25,45 @@
           padding: 10px 0;
           display: block; } }
 
+.bike {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px 0; }
+  @media (max-width: 1024px) {
+    .bike {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .bike {
+      padding: 2px 10px; } }
+  .bike .bike-left {
+    width: 45%; }
+    .bike .bike-left img {
+      width: 100%; }
+  @media (max-width: 640px) {
+    .bike {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      background-color: #eeeff0;
+      text-align: center; }
+      .bike .bike-left {
+        width: 100%; }
+        .bike .bike-left img {
+          width: 100%; } }
+  .bike .bike-right {
+    width: 45%;
+    margin-top: 100px; }
+    @media (max-width: 1024px) {
+      .bike .bike-right {
+        margin-top: 10px;
+        width: 100%; } }
+    .bike .bike-right .small-business-top {
+      font-size: 2em;
+      padding: 10px; }
+    .bike .bike-right .small-business-description {
+      padding: 2px 10px;
+      color: #8c8c8c; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -138,45 +177,6 @@ body {
           padding: 14px;
           text-align: center;
           border: none; }
-
-.bike {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 200px 0; }
-  @media (max-width: 1024px) {
-    .bike {
-      padding: 10px 50px; } }
-  @media (max-width: 640px) {
-    .bike {
-      padding: 2px 10px; } }
-  .bike .bike-left {
-    width: 45%; }
-    .bike .bike-left img {
-      width: 100%; }
-  @media (max-width: 640px) {
-    .bike {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      background-color: #eeeff0;
-      text-align: center; }
-      .bike .bike-left {
-        width: 100%; }
-        .bike .bike-left img {
-          width: 100%; } }
-  .bike .bike-right {
-    width: 45%;
-    margin-top: 100px; }
-    @media (max-width: 1024px) {
-      .bike .bike-right {
-        margin-top: 10px;
-        width: 100%; } }
-    .bike .bike-right .small-business-top {
-      font-size: 2em;
-      padding: 10px; }
-    .bike .bike-right .small-business-description {
-      padding: 2px 10px;
-      color: #8c8c8c; }
 
 .printer {
   display: flex;
