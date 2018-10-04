@@ -1,3 +1,30 @@
+.menu {
+  list-style-type: none;
+  padding: 20px 40px; }
+  @media (max-width: 640px) {
+    .menu {
+      padding: 40px 20px;
+      font-size: 2em;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      background: #3dd8c8;
+      top: -100%;
+      transition: all 0.3s ease; }
+      .menu.open {
+        top: 0; } }
+  .menu .menu-item {
+    display: inline-block;
+    padding: 20px 20px 0; }
+    .menu .menu-item a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold; }
+      @media (max-width: 640px) {
+        .menu .menu-item a {
+          padding: 10px 0;
+          display: block; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -20,32 +47,6 @@ body {
           width: 90%; } }
       .header .nav .logo img {
         width: 100%; }
-    .header .nav .menu {
-      list-style-type: none;
-      padding: 20px 40px; }
-      @media (max-width: 640px) {
-        .header .nav .menu {
-          padding: 40px 20px;
-          font-size: 2em;
-          position: absolute;
-          text-align: center;
-          width: 100%;
-          background: #3dd8c8;
-          top: -100%;
-          transition: all 0.3s ease; }
-          .header .nav .menu.open {
-            top: 0; } }
-      .header .nav .menu .menu-item {
-        display: inline-block;
-        padding: 20px 20px 0; }
-        .header .nav .menu .menu-item a {
-          text-decoration: none;
-          color: #000;
-          font-weight: bold; }
-          @media (max-width: 640px) {
-            .header .nav .menu .menu-item a {
-              padding: 10px 0;
-              display: block; } }
   @media (max-width: 640px) {
     .header .nav-mobile {
       display: flex;
