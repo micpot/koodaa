@@ -1,5 +1,6 @@
 
 .menu {
+    
     list-style-type: none;
     padding: 20px 40px;
     @include breakpoint($breakpoint-small) {
@@ -21,7 +22,7 @@
     .menu-item {
         display: inline-block;
         padding: 20px 20px 0;
-    
+
 
         a {
             text-decoration: none;

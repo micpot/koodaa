@@ -4,7 +4,7 @@
 @import "sass/components/_bike.scss";
 @import "sass/components/_printer.scss";
 @import "sass/components/_coins.scss";
-@import "sass/components/_nav-mobile.scss";
+
 @import "sass/components/_payment.scss";
 @import "sass/components/_wand.scss";
 
@@ -17,31 +17,65 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.header {
-    background-size: cover;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint ($breakpoint-small){
+    flex-direction: column;
+}
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
 
-        .mobile-menu-title {
-            display: none;
-        }
+    .mobile-menu-title {
+        display: none;
+        @include breakpoint ($breakpoint-small){
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
 
-        .logo {
-            padding: 20px 40px;
-            width: 160px;
-            @include breakpoint($breakpoint-small) {
-                width: 90%;
-            }
+            a {
+                text-transform: uppercase;
+                font-size: 2em;
+                font-weight: bold;
+                @include breakpoint ($breakpoint-small) {
+                    padding: 10px 0;
+                    display: inline-block;
+                }
 
-            img {
-                width: 100%;
+                &.active,
+                &:hover {
+                    background-color: #3dd8c8;
+                }
             }
         }
 
 
     }
+
+
+
+
+    .logo {
+        padding: 20px 40px;
+        width: 160px;
+        @include breakpoint($breakpoint-small) {
+            width: 90%;
+            padding: 20px 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+.header {
+    background-size: cover;
+
+
+
 
 
 
