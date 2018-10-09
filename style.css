@@ -29,6 +29,74 @@
     .nav .logo img {
       width: 100%; }
 
+.phone-frame {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px; }
+  @media (max-width: 1024px) {
+    .phone-frame {
+      padding: 10px 50px; } }
+  @media (max-width: 640px) {
+    .phone-frame {
+      padding: 0;
+      text-align: center; } }
+  .phone-frame .phone-business-left {
+    width: 45%; }
+    .phone-frame .phone-business-left img {
+      width: 80%; }
+  @media (max-width: 640px) {
+    .phone-frame {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 20px; }
+      .phone-frame .phone-business-left {
+        width: 100%; }
+        .phone-frame .phone-business-left img {
+          width: 100%; } }
+  .phone-frame .phone-business-right {
+    width: 45%;
+    flex-direction: column;
+    margin-top: 200px; }
+    @media (max-width: 1024px) {
+      .phone-frame .phone-business-right {
+        margin-top: 10px;
+        width: 100%; } }
+    .phone-frame .phone-business-right .install {
+      font-size: 3em;
+      padding-bottom: 20px; }
+      @media (max-width: 640px) {
+        .phone-frame .phone-business-right .install {
+          display: flex;
+          justify-content: center; } }
+    .phone-frame .phone-business-right .install-description {
+      font-size: 1.5em;
+      padding-bottom: 20px;
+      color: #8c8c8c; }
+    .phone-frame .phone-business-right form {
+      display: flex;
+      flex-direction: column; }
+      @media (max-width: 640px) {
+        .phone-frame .phone-business-right form {
+          display: inline; } }
+      .phone-frame .phone-business-right form input[type=text] {
+        width: 240px;
+        padding: 12px 0;
+        color: #cccccc;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #8c8c8c;
+        text-align: left; }
+      .phone-frame .phone-business-right form input[type=button] {
+        width: 160px;
+        border-radius: 50px;
+        background-color: #3dd8c8;
+        color: #ffffff;
+        padding: 14px;
+        text-align: center;
+        border: none; }
+
 .menu {
   list-style-type: none;
   padding: 20px 40px; }
@@ -259,72 +327,5 @@ body {
 
 .header {
   background-size: cover; }
-  .header .phone-frame {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 200px; }
-    @media (max-width: 1024px) {
-      .header .phone-frame {
-        padding: 10px 50px; } }
-    @media (max-width: 640px) {
-      .header .phone-frame {
-        padding: 0;
-        text-align: center; } }
-    .header .phone-frame .phone-business-left {
-      width: 45%; }
-      .header .phone-frame .phone-business-left img {
-        width: 80%; }
-    @media (max-width: 640px) {
-      .header .phone-frame {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 20px; }
-        .header .phone-frame .phone-business-left {
-          width: 100%; }
-          .header .phone-frame .phone-business-left img {
-            width: 100%; } }
-    .header .phone-frame .phone-business-right {
-      width: 45%;
-      flex-direction: column;
-      margin-top: 200px; }
-      @media (max-width: 1024px) {
-        .header .phone-frame .phone-business-right {
-          margin-top: 10px;
-          width: 100%; } }
-      .header .phone-frame .phone-business-right .install {
-        font-size: 3em;
-        padding-bottom: 20px; }
-        @media (max-width: 640px) {
-          .header .phone-frame .phone-business-right .install {
-            display: flex;
-            justify-content: center; } }
-      .header .phone-frame .phone-business-right .install-description {
-        font-size: 1.5em;
-        padding-bottom: 20px;
-        color: #8c8c8c; }
-      .header .phone-frame .phone-business-right form {
-        display: flex;
-        flex-direction: column; }
-        @media (max-width: 640px) {
-          .header .phone-frame .phone-business-right form {
-            display: inline; } }
-        .header .phone-frame .phone-business-right form input[type=text] {
-          width: 240px;
-          padding: 12px 0;
-          color: #cccccc;
-          margin: 8px 0;
-          box-sizing: border-box;
-          border: none;
-          border-bottom: 1px solid #8c8c8c;
-          text-align: left; }
-        .header .phone-frame .phone-business-right form input[type=button] {
-          width: 160px;
-          border-radius: 50px;
-          background-color: #3dd8c8;
-          color: #ffffff;
-          padding: 14px;
-          text-align: center;
-          border: none; }
 
 /*# sourceMappingURL=style.css.map */
