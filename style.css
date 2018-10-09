@@ -32,9 +32,6 @@
   @media (max-width: 1024px) {
     .bike {
       padding: 10px 50px; } }
-  @media (max-width: 640px) {
-    .bike {
-      padding: 2px 10px; } }
   .bike .bike-left {
     width: 45%; }
     .bike .bike-left img {

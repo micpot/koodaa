@@ -5,9 +5,6 @@
     @include breakpoint($breakpoint-medium) {
         padding: 10px 50px;
     }
-    @include breakpoint($breakpoint-small) {
-        padding: 2px 10px;
-    }
 
     .bike-left {
         width: 45%;
