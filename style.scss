@@ -1,5 +1,6 @@
 @import "sass/variables";
 @import "sass/components";
+@import "sass/components/_header.scss";
 @import "sass/components/_nav.scss";
 @import "sass/components/_phone-frame.scss";
 @import "sass/components/_menu.scss";
@@ -16,9 +17,4 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-}
-
-
-.header {
-    background-size: cover;
 }
