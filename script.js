@@ -14,7 +14,7 @@ function toggleMenuClass() {
 }
 
 $(document).ready(function(){
-    $('.slick-example').slick({
+    $('.slider').slick({
         // settings goes here
     });
 });
