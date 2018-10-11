@@ -1,0 +1,37 @@
+
+.menu {
+    
+    list-style-type: none;
+    padding: 20px 40px;
+    @include breakpoint($breakpoint-small) {
+        padding: 40px 20px;
+        font-size: 2em;
+        $menu-width: 100%;
+        position: absolute;
+        text-align: center;
+        width: $menu-width;
+        background: #3dd8c8;
+        top: -$menu-width;
+        transition: all 0.3s ease;
+
+        &.open {
+            top: 0;
+        }
+    }
+
+    .menu-item {
+        display: inline-block;
+        padding: 20px 20px 0;
+
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            @include breakpoint ($breakpoint-small) {
+                padding: 10px 0;
+                display: block;
+            }
+        }
+    }
+}
