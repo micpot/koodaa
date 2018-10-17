@@ -16,6 +16,7 @@ function toggleMenuClass() {
 $(document).ready(function(){
     $('.slider').slick({
 slidesToShow: 1,
+
 slidesToScroll: 3,
 arrows: true,
 dots: true,
