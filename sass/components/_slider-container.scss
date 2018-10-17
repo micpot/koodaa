@@ -1,0 +1,25 @@
+.slider-container {
+    background-color: #eeeff0;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 50px;
+
+    .slider-title {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .slider {
+        background-color: red;
+        text-align: center;
+        width: 60%;
+
+        .slider-element {
+            background-color: yellow;
+            padding: 10px 20px;
+
+        }
+    }
+}
