@@ -1,0 +1,60 @@
+.bottom {
+    background-color: #3E4752;
+    color: #8c8c8c;
+    align-items: center;
+
+    .bottom-container {
+        padding: 80px 200px 80px;
+        display: flex;
+        flex-direction: row;
+
+        .left-bottom {
+            width: 35%;
+
+            .left-bottom-title {
+                font-size: 1.1em;
+                color: #ffffff;
+                padding-bottom: 30px;
+            }
+            .left-bottom-description {
+                padding: 10px 0px;
+            }
+            .form-settings {
+                background-color: blue;
+                border-color: red 2px solid;
+            }
+        }
+
+        .right-bottom {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+
+            .right-bottom-index {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                .bottom-element-title {
+                    font-size: 1.1em;
+                    color: #ffffff;
+
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .social-list-element {
+                padding-right: 10px;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
