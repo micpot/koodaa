@@ -4,9 +4,10 @@
     align-items: center;
 
     .bottom-container {
-        padding: 80px 200px 80px;
+        padding: 80px 200px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         .left-bottom {
             width: 35%;
@@ -16,12 +17,31 @@
                 color: #ffffff;
                 padding-bottom: 30px;
             }
+
             .left-bottom-description {
-                padding: 10px 0px;
+                padding: 10px 0;
             }
+
             .form-settings {
-                background-color: blue;
-                border-color: red 2px solid;
+                padding: 20px 0 40px;
+
+                input[type=text] {
+                    width: 100%;
+                    border: 2px solid #8c8c8c;
+                    padding: 12px 5px;
+                    color: #737373;
+                    background-color: #3E4752;
+                    border-radius: 5px;
+                    font-size: 1.1em;
+                }
+            }
+
+            .left-corner {
+                display: flex;
+
+                .left-rights {
+                    padding: 10px 0 10px 6px;
+                }
             }
         }
 
@@ -33,26 +53,34 @@
             .right-bottom-index {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
+                justify-content: space-between;
 
                 .bottom-element-title {
                     font-size: 1.1em;
                     color: #ffffff;
+                    padding-bottom: 30px;
+                }
 
+                .bottom-element {
+                    padding: 10px 0;
                 }
             }
         }
 
         .social-media {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+            padding-top: 50px;
 
-            .social-list-element {
-                padding-right: 10px;
+            .social-group {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 66%;
 
-                img {
-                    width: 50%;
+                .social-list-element {
+
+                    img {
+                        width: 60%;
+                    }
                 }
             }
         }

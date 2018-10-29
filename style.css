@@ -326,9 +326,10 @@
   color: #8c8c8c;
   align-items: center; }
   .bottom .bottom-container {
-    padding: 80px 200px 80px;
+    padding: 80px 200px;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
     .bottom .bottom-container .left-bottom {
       width: 35%; }
       .bottom .bottom-container .left-bottom .left-bottom-title {
@@ -336,10 +337,21 @@
         color: #ffffff;
         padding-bottom: 30px; }
       .bottom .bottom-container .left-bottom .left-bottom-description {
-        padding: 10px 0px; }
+        padding: 10px 0; }
       .bottom .bottom-container .left-bottom .form-settings {
-        background-color: blue;
-        border-color: red 2px solid; }
+        padding: 20px 0 40px; }
+        .bottom .bottom-container .left-bottom .form-settings input[type=text] {
+          width: 100%;
+          border: 2px solid #8c8c8c;
+          padding: 12px 5px;
+          color: #737373;
+          background-color: #3E4752;
+          border-radius: 5px;
+          font-size: 1.1em; }
+      .bottom .bottom-container .left-bottom .left-corner {
+        display: flex; }
+        .bottom .bottom-container .left-bottom .left-corner .left-rights {
+          padding: 10px 0 10px 6px; }
     .bottom .bottom-container .right-bottom {
       width: 55%;
       display: flex;
@@ -347,18 +359,22 @@
       .bottom .bottom-container .right-bottom .right-bottom-index {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start; }
+        justify-content: space-between; }
         .bottom .bottom-container .right-bottom .right-bottom-index .bottom-element-title {
           font-size: 1.1em;
-          color: #ffffff; }
+          color: #ffffff;
+          padding-bottom: 30px; }
+        .bottom .bottom-container .right-bottom .right-bottom-index .bottom-element {
+          padding: 10px 0; }
     .bottom .bottom-container .social-media {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      .bottom .bottom-container .social-media .social-list-element {
-        padding-right: 10px; }
-        .bottom .bottom-container .social-media .social-list-element img {
-          width: 50%; }
+      padding-top: 50px; }
+      .bottom .bottom-container .social-media .social-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 66%; }
+        .bottom .bottom-container .social-media .social-group .social-list-element img {
+          width: 60%; }
 
 * {
   margin: 0;
