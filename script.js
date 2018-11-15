@@ -19,5 +19,7 @@ $(document).ready(function(){
         //slidesToScroll: 3,
         arrows: true,
         dots: true,
+
+
     });
 });

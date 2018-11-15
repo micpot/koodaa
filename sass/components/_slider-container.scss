@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
 
+
+
     padding: 10px 50px;
 
     .slider-title {
@@ -12,12 +14,14 @@
     }
 
     .slider {
-        background-color: red;
+    
         text-align: center;
+        justify-content: space-around;
         width: 60%;
 
+
         .slider-element {
-            background-color: yellow;
+            background-color: #ffffff;
             padding: 10px 20px;
 
         }
