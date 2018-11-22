@@ -331,12 +331,20 @@
     text-align: center;
     padding: 50px; }
   .slider-container .slider {
+    align-items: center;
     text-align: center;
     justify-content: space-around;
     width: 60%; }
     .slider-container .slider .slider-element {
       background-color: #ffffff;
       padding: 10px 20px; }
+      .slider-container .slider .slider-element .element-name {
+        font-size: 1.2em;
+        padding: 10px 0; }
+      .slider-container .slider .slider-element .element-position {
+        font-size: 0.8em;
+        color: #8c8c8c;
+        padding: 10px 0; }
 
 * {
   margin: 0;
