@@ -375,7 +375,6 @@
           padding-top: 0; } }
       .bottom .bottom-container .right-bottom .right-bottom-index {
         display: flex;
-        flex-direction: row;
         justify-content: space-between; }
         .bottom .bottom-container .right-bottom .right-bottom-index .bottom-element-title {
           font-size: 1.1em;
