@@ -396,7 +396,6 @@
         flex-direction: column-reverse; } }
     .bottom .real-bottom .left-corner {
       display: flex;
-      justify-content: flex-start;
       width: 30%; }
       @media (max-width: 640px) {
         .bottom .real-bottom .left-corner {

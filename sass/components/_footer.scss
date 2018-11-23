@@ -83,7 +83,6 @@
     .real-bottom {
         padding: 0 200px;
         display: flex;
-        
         justify-content: space-between;
         @include breakpoint($breakpoint-medium) {
             padding: 10px 50px;
@@ -96,7 +95,6 @@
 
         .left-corner {
             display: flex;
-            justify-content: flex-start;
             width: 30%;
             @include breakpoint($breakpoint-small) {
                 width: 100%;
