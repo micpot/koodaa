@@ -412,9 +412,7 @@
         width: 100%;
         padding: 20px 0; } }
     .bottom .social-media .social-group {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
+      display: flex; }
       @media (max-width: 640px) {
         .bottom .social-media .social-group {
           justify-content: space-around; } }
