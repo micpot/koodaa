@@ -109,26 +109,26 @@
         }
     }
 
-    .social-media {
-        width: 60%;
-        @include breakpoint($breakpoint-small) {
-            width: 100%;
-            padding: 20px 0;
-        }
-
-        .social-group {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+        .social-media {
+            width: 60%;
             @include breakpoint($breakpoint-small) {
-                justify-content: space-around;
+                width: 100%;
+                padding: 20px 0;
             }
 
-            .social-list-element {
-                img {
-                    width: 60%;
+            .social-group {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                @include breakpoint($breakpoint-small) {
+                    justify-content: space-around;
+                }
+
+                .social-list-element {
+                    img {
+                        width: 60%;
+                    }
                 }
             }
         }
     }
-}
