@@ -1,7 +1,6 @@
 .bottom {
     background-color: #3E4752;
     color: #8c8c8c;
-
     @include breakpoint($breakpoint-small) {
         padding: 2px 10px;
     }
@@ -9,13 +8,11 @@
     .bottom-container {
         padding: 80px 200px 0;
         display: flex;
-
         justify-content: space-between;
         @include breakpoint($breakpoint-medium) {
             padding: 10px 50px;
         }
         @include breakpoint($breakpoint-small) {
-            
             flex-direction: column;
             padding: 2px 10px;
         }
@@ -25,7 +22,7 @@
             @include breakpoint($breakpoint-medium) {
                 padding-top: 50px;
             }
-            @include breakpoint ($breakpoint-small) {
+            @include breakpoint($breakpoint-small) {
                 width: 100%;
             }
 
