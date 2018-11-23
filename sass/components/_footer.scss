@@ -1,7 +1,7 @@
 .bottom {
     background-color: #3E4752;
     color: #8c8c8c;
-    align-items: center;
+    
     @include breakpoint($breakpoint-small) {
         padding: 2px 10px;
     }
