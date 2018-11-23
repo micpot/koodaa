@@ -65,7 +65,6 @@
 
             .right-bottom-index {
                 display: flex;
-                
                 justify-content: space-between;
 
                 .bottom-element-title {
@@ -84,7 +83,7 @@
     .real-bottom {
         padding: 0 200px;
         display: flex;
-        flex-direction: row;
+        
         justify-content: space-between;
         @include breakpoint($breakpoint-medium) {
             padding: 10px 50px;

@@ -385,7 +385,6 @@
   .bottom .real-bottom {
     padding: 0 200px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between; }
     @media (max-width: 1024px) {
       .bottom .real-bottom {
