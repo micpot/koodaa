@@ -325,19 +325,54 @@
   background-color: #eeeff0;
   display: flex;
   flex-direction: column;
-  padding: 10px 50px; }
+  padding: 10px 50px;
+  justify-content: center; }
   .slider-container .slider-title {
     font-size: 1.5em;
     text-align: center;
-    padding: 50px; }
+    padding: 50px 50px 20px; }
   .slider-container .slider {
-    align-items: center;
     text-align: center;
-    justify-content: space-around;
-    width: 60%; }
+    width: 60%;
+    margin: auto auto 50px; }
+    .slider-container .slider .element-photo img {
+      display: inline-block;
+      margin-top: -60px;
+      transform: scale(0.7);
+      transition: transform 0.3s ease, margin-left 1s ease; }
+    .slider-container .slider .medium-text {
+      padding: 0 20px 40px; }
+    .slider-container .slider .slick-prev {
+      left: -100px;
+      margin-top: 25px;
+      transform: rotate(180deg); }
+      .slider-container .slider .slick-prev::before {
+        content: "";
+        background: url("././images/slider_arrow.png") no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        display: block; }
+    .slider-container .slider .slick-next {
+      right: -100px;
+      margin-top: 25px; }
+      .slider-container .slider .slick-next::before {
+        content: "";
+        background: url("././images/slider_arrow.png") no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        display: block; }
     .slider-container .slider .slider-element {
-      background-color: #ffffff;
-      padding: 10px 20px; }
+      opacity: 0.8; }
+      .slider-container .slider .slider-element:hover {
+        opacity: 1; }
+        .slider-container .slider .slider-element:hover .element-photo img {
+          transform: scale(1); }
+      .slider-container .slider .slider-element .slide-wrapper {
+        background: #fff;
+        margin-top: 60px;
+        border-radius: 4px; }
       .slider-container .slider .slider-element .element-name {
         font-size: 1.2em;
         padding: 10px 0; }
@@ -345,6 +380,8 @@
         font-size: 0.8em;
         color: #8c8c8c;
         padding: 10px 0; }
+  .slider-container .slick-dots li.slick-active button:before {
+    color: #3dd8c8; }
 
 * {
   margin: 0;
