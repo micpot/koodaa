@@ -1,12 +1,10 @@
-var mobileRun = document.querySelector('.mobile-menu-title');
-console.log("mobileRun: ", mobileRun);
+var mobileMenuTitle = document.querySelector('.mobile-menu-title');
 
-mobileRun.addEventListener('click', use);
+mobileMenuTitle.addEventListener('click', toggleMenuClass);
 
-function use() {
+function toggleMenuClass() {
     var menuNode = document.querySelector('.menu');
 
-    console.log('run: ', menuNode);
 
     if (menuNode.classList.contains('open')) {
         menuNode.classList.remove('open');
@@ -14,3 +12,14 @@ function use() {
         menuNode.classList.add('open')
     }
 }
+
+$(document).ready(function(){
+    $('.slider').slick({
+        //slidesToShow: 1,
+        //slidesToScroll: 3,
+        arrows: true,
+        dots: true,
+
+
+    });
+});
